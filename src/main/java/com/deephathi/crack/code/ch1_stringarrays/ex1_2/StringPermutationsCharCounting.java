@@ -1,6 +1,6 @@
 package com.deephathi.crack.code.ch1_stringarrays.ex1_2;
 
-public class StringPermutationsCharCounting implements StringPermutations {
+public class StringPermutationsCharCounting extends AbstractStringPermutations {
 
     private static final int EXTENDED_ASCII_LENGTH = 256;
 

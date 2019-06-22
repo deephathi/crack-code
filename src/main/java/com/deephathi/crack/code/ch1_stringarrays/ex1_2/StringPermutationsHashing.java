@@ -3,7 +3,7 @@ package com.deephathi.crack.code.ch1_stringarrays.ex1_2;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StringPermutationsHashing implements StringPermutations {
+public class StringPermutationsHashing extends AbstractStringPermutations {
     @Override
     public boolean isFirstStringPermutationOfSecond(String first, String second) {
 

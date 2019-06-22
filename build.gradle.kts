@@ -27,6 +27,8 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("org.apache.commons:commons-lang3:3.7")
 
+    implementation("org.projectlombok:lombok:1.18.8")
+
     // Use the latest Groovy version for Spock testing
     testImplementation("org.codehaus.groovy:groovy-all:2.5.6")
 

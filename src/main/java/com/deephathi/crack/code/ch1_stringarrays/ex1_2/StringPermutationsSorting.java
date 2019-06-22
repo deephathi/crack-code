@@ -2,7 +2,7 @@ package com.deephathi.crack.code.ch1_stringarrays.ex1_2;
 
 import java.util.Arrays;
 
-public class StringPermutationsSorting implements StringPermutations {
+public class StringPermutationsSorting extends AbstractStringPermutations {
 
     @Override
     public boolean isFirstStringPermutationOfSecond(String first, String second) {
