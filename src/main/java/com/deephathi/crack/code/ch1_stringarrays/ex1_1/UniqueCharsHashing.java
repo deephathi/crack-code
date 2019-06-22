@@ -3,7 +3,7 @@ package com.deephathi.crack.code.ch1_stringarrays.ex1_1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueCharsHashing implements UniqueChars {
+public class UniqueCharsHashing extends AbstractUniqueChars {
     @Override
     public boolean areAllCharsUnique(String incomingStr) {
 
