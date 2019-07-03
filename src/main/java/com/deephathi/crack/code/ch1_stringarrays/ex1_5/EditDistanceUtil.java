@@ -56,12 +56,14 @@ public class EditDistanceUtil {
             }
         }
 
-        if (count1 < len1) {
-            editDistance += updateEditDistance(str1, count1);
-        }
+        if (editDistance <= 1) {
+            if (count1 < len1) {
+                editDistance += updateEditDistance(str1, count1);
+            }
 
-        if (count2 < len2) {
-            editDistance += updateEditDistance(str2, count2);
+            if (count2 < len2) {
+                editDistance += updateEditDistance(str2, count2);
+            }
         }
 
         return editDistance;
