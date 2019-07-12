@@ -1,6 +1,6 @@
 package com.deephathi.crack.code.ch1_stringarrays.ex1_5;
 
-public class EditDistanceUtil {
+public class OneEditDistanceUtil {
 
     public boolean areEditAway(String str1, String str2) {
 
