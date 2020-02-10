@@ -1,6 +1,4 @@
-package com.deephathi.crack.code.ex1_9;
-
-import java.util.Arrays;
+package com.deephathi.crack.code.ch1_stringarrays.ex1_9;
 
 public class IterativeStringRotation implements StringRotation {
 
