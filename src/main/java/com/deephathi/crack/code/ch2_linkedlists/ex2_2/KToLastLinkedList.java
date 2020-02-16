@@ -15,6 +15,7 @@ public class KToLastLinkedList<T> {
         public Node(U incomingData) {
             this.data = incomingData;
         }
+
         public U getData() {
             return data;
         }
@@ -36,6 +37,28 @@ public class KToLastLinkedList<T> {
             return data.toString();
         }
     }
+
+    private static class SumNode {
+        public static int sum;
+    }
+
+    public Node<T> getKtoLastNodeRecursively(int kthNum) {
+        return getKtoLastSumNode(this.head, kthNum);
+    }
+
+    private Node<T> getKtoLastSumNode(Node<T> currentNode, int kthNum) {
+        if (currentNode == null) {
+            return null;
+        } else {
+            Node<T> returnedNode = getKtoLastSumNode(currentNode.getNext(), kthNum);
+            SumNode.sum++;
+            if (SumNode.sum == kthNum) {
+                return currentNode;
+            }
+            return returnedNode;
+        }
+    }
+
 
 
     public Node<T> getKToLastNode(int kthNo) {

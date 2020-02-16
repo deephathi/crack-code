@@ -22,7 +22,7 @@ class KToLastLinkedListShould extends Specification {
             fourthNode.setNext(fifthNode);
 
         when:
-            KToLastLinkedList.Node<Integer> kthNode = list.getKToLastNode(4);
+            KToLastLinkedList.Node<Integer> kthNode = list.getKtoLastNodeRecursively(4);
 
         then:
             "2" == kthNode.toString();
