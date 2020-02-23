@@ -8,6 +8,12 @@ public class SinglyLinkedListNode<T> {
 	
 	private SinglyLinkedListNode<T> next;
 	
+	public SinglyLinkedListNode() {}
+	
+	public SinglyLinkedListNode(T incomingData) {
+		this.data = incomingData;
+	}
+	
 	public T getData() {
 		return data;
 	}

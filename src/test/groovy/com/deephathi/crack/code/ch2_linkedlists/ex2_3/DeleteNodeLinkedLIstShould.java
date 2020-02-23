@@ -1,7 +1,7 @@
 package com.deephathi.crack.code.ch2_linkedlists.ex2_3;
 
+import org.junit.Assert;
 import org.junit.Test;
-import org.testng.Assert;
 
 import com.deephathi.crack.code.ch2_linkedlists.SinglyLinkedListNode;
 
