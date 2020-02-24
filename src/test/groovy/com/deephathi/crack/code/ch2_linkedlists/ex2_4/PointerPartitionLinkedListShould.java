@@ -1,9 +1,10 @@
 package com.deephathi.crack.code.ch2_linkedlists.ex2_4;
 
 import com.deephathi.crack.code.ch2_linkedlists.SinglyLinkedListNode;
+import org.junit.Assert;
 import org.junit.Test;
 
-public class PartitionLinkedListShould {
+public class PointerPartitionLinkedListShould {
 
 	@Test
 	public void partitionsList() {
@@ -27,9 +28,10 @@ public class PartitionLinkedListShould {
 		SinglyLinkedListNode<Integer> node7 = new SinglyLinkedListNode<>(1);
 		node6.setNext(node7);
 		
-		PartitionLinkedList<Integer> partitionList = new PartitionLinkedList<>();
-		partitionList.partitionAt(node1, 5);
-		
+		PartitionLinkedList<Integer> partitionList = new MultiPartitionLinkedList<>();
+		SinglyLinkedListNode<Integer> updatedHead = partitionList.partitionAt(node1, 5);
+
+		Assert.assertEquals("3 > 2 > 1 > 5 > 8 > 5 > 10", updatedHead.toString());
 		
 	}
 }
