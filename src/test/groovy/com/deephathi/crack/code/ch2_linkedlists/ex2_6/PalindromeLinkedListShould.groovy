@@ -37,8 +37,8 @@ class PalindromeLinkedListShould extends Specification {
             secondFourth.setNext(secondFifth);
 
         when:
-            boolean isPalindrome = new StackPalindromeLinkedList<>().isPalindrome(firstFirst);
-            boolean isNotPalindrome = new StackPalindromeLinkedList().isPalindrome(secondFirst);
+            boolean isPalindrome = new EndRecursivePalindrome<>().isPalindrome(firstFirst);
+            boolean isNotPalindrome = new EndRecursivePalindrome<>().isPalindrome(secondFirst);
         then:
             isPalindrome
             !isNotPalindrome
